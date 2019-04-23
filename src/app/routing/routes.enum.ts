@@ -1,4 +1,4 @@
 export enum Routes {
-  DASHBOARD = '',
+  DASHBOARD = 'dashboard',
   SCORE_CARD = 'score'
 }

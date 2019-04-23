@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RoutingModule } from './routing/routing.module';
 import { AppComponent } from './app.component';
 import { ViewModule } from './view/view.module';
+import { LayoutModule } from './layout/layout.module';
 
 @NgModule({
   declarations: [
@@ -10,6 +11,7 @@ import { ViewModule } from './view/view.module';
   ],
   imports: [
     BrowserModule,
+    LayoutModule,
     RoutingModule,
     ViewModule
   ],

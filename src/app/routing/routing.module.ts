@@ -4,11 +4,17 @@ import { Routes } from './routes.enum';
 import { DashboardComponent } from '../view/dashboard/dashboard.component';
 import { ScoreCardComponent } from '../view/score-card/score-card.component';
 import { NotFoundComponent } from '../view/not-found/not-found.component';
+import { PageLayoutComponent } from '../layout/page-layout/page-layout.component';
 
 const routes: NgRoutes = [
-  {path: Routes.DASHBOARD, component: DashboardComponent},
-  {path: Routes.SCORE_CARD, component: ScoreCardComponent},
-  {path: '**', component: NotFoundComponent}
+  {path: '', pathMatch: 'full', redirectTo: Routes.DASHBOARD},
+  {
+    path: '', component: PageLayoutComponent, children: [
+      {path: Routes.DASHBOARD, component: DashboardComponent},
+      {path: Routes.SCORE_CARD, component: ScoreCardComponent},
+      {path: '**', component: NotFoundComponent}
+    ]
+  }
 ];
 
 @NgModule({

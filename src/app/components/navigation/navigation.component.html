@@ -1,0 +1,15 @@
+<div class=" navbar-expand" id="navbarNav">
+  <ul class="navbar-nav">
+    <li
+      *ngFor="let page of pages"
+      class="nav-item"
+      routerLinkActive="active">
+      <a
+        class="nav-link"
+        href="#"
+        [routerLink]="page.route">
+        {{ page.name }}
+      </a>
+    </li>
+  </ul>
+</div>
