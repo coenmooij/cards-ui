@@ -1,0 +1,24 @@
+<div class="card mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-3 bg-light">
+      <img *ngIf="summary.imageUrl" [src]="summary.imageUrl" [alt]="summary.title" class="p-3 card-img">
+      <img *ngIf="!summary.imageUrl" [src]="placeholderImageUrl" alt="placeholder image" class="card-img p-3">
+    </div>
+    <div class="col-md-9">
+      <div class="card-body">
+        <a [routerLink]="summary.route"><h5 class="card-title">{{ summary.title }}</h5></a>
+        <p class="card-text">{{ summary.description }}</p>
+        <a *ngFor="let source of summary.sources" [href]="source.url">
+          <button class="mr-3 mb-1 btn btn-sm btn-dark">
+            <i class="fa fa-github"></i> {{ source.title }}
+          </button>
+        </a>
+        <a *ngIf="summary.demoUrl" [href]="summary.demoUrl">
+          <button class="mr-3 btn btn-sm btn-success">
+            <i class="fa fa-play"></i> Demo
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

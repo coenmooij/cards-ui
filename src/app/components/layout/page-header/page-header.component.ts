@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Page } from '../../../domain/page.interface';
+import { Page } from '../../../domain/layout/page.interface';
 
 @Component({
   selector: 'app-page-header',

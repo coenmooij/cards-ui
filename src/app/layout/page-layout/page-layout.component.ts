@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Page } from '../../domain/page.interface';
+import { Page } from '../../domain/layout/page.interface';
 import { Routes } from '../../routing/routes.enum';
 
 @Component({
@@ -10,8 +10,8 @@ export class PageLayoutComponent {
   pages: Page[] = [
     {name: 'Bingo', route: `/${Routes.BINGO}`},
     {name: 'Sudoku', route: `/${Routes.SUDOKU}`},
-    {name: 'Klaverjassen', route: `/${Routes.JASS}`},
-    {name: 'Hartenjagen', route: `/${Routes.HEARTS}`},
+    {name: 'Klaverjassen', route: `/${Routes.KLAVERJASSEN}`},
+    {name: 'Hartenjagen', route: `/${Routes.HARTENJAGEN}`},
     {name: 'Pong', route: `/${Routes.PONG}`}
   ];
 }

@@ -1,5 +1,5 @@
 {
-  "name": "hearts-ui",
+  "name": "games-ui",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -19,7 +19,9 @@
     "@angular/platform-browser": "^7.2.15",
     "@angular/platform-browser-dynamic": "^7.2.15",
     "@angular/router": "^7.2.15",
+    "angular-font-awesome": "^3.1.2",
     "core-js": "^2.5.4",
+    "font-awesome": "^4.7.0",
     "rxjs": "~6.5.2",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"

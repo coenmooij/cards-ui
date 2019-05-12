@@ -1,7 +1,7 @@
 export enum Routes {
   DASHBOARD = 'dashboard',
-  JASS = 'jass',
-  HEARTS = 'hearts',
+  KLAVERJASSEN = 'klaverjassen',
+  HARTENJAGEN = 'hartenjagen',
   BINGO = 'bingo',
   SUDOKU = 'sudoku',
   PONG = 'pong'

@@ -15,8 +15,8 @@ const routes: NgRoutes = [
   {
     path: '', component: PageLayoutComponent, children: [
       {path: Routes.DASHBOARD, component: DashboardComponent},
-      {path: Routes.JASS, component: KlaverjassenComponent},
-      {path: Routes.HEARTS, component: HartenjagenComponent},
+      {path: Routes.KLAVERJASSEN, component: KlaverjassenComponent},
+      {path: Routes.HARTENJAGEN, component: HartenjagenComponent},
       {path: Routes.BINGO, component: BingoComponent},
       {path: Routes.SUDOKU, component: SudokuComponent},
       {path: Routes.PONG, component: PongComponent},
