@@ -1,2 +1,23 @@
-<h1>Hello dashboard</h1>
-<p>Here some dashboard stuff</p>
+<h1>Games</h1>
+<p>I made this website to showcase all the games I've build in the past.</p>
+<p>These games are:</p>
+<ul>
+  <li>Bingo</li>
+  <li>Sudoku</li>
+  <li>Klaverjassen</li>
+  <li>Hartenjagen</li>
+  <li>Pong</li>
+</ul>
+<br>
+
+<app-game-card
+  *ngFor="let game of games"
+  [title]="game.title"
+  [description]="game.description"
+  [githubUrl]="game.githubUrl"
+  [hasImage]="game.hasImage"
+  [imageUrl]="game.imageUrl"
+  [hasDemo]="game.hasDemo"
+  [demoUrl]="game.demoUrl"
+  [route]="game.route">
+</app-game-card>

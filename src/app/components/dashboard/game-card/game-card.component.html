@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="row no-gutters">
+    <div class="col-md-2">
+      <img *ngIf="hasImage" [src]="imageUrl" [alt]="title + ' screenshot'" class="card-img">
+      <img *ngIf="!hasImage" src="/assets/images/placeholder-image.png" alt="placeholder image" class="card-img">
+    </div>
+    <div class="col-md-10">
+      <div class="card-body">
+        <h5 class="card-title">{{ title }}</h5>
+        <p class="card-text">{{ description }}</p>
+        <button class="btn btn-lg"></button>
+      </div>
+    </div>
+  </div>
+</div>
