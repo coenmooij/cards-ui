@@ -8,7 +8,8 @@ import { Routes } from '../../routing/routes.enum';
 })
 export class PageLayoutComponent {
   pages: Page[] = [
-    {name: 'Dashboard', route: Routes.DASHBOARD},
-    {name: 'Score Card', route: Routes.SCORE_CARD}
+    {name: 'Dashboard', route: `/${Routes.DASHBOARD}`},
+    {name: 'Jass', route: `/${Routes.JASS}`},
+    {name: 'Hearts', route: `/${Routes.HEARTS}`}
   ];
 }

@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HeartsComponent } from './hearts/hearts.component';
+import { JassComponent } from './jass/jass.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { ScoreCardComponent } from './score-card/score-card.component';
 
 const COMPONENTS = [
   DashboardComponent,
   NotFoundComponent,
-  ScoreCardComponent
+  JassComponent,
+  HeartsComponent
 ];
 
 @NgModule({
