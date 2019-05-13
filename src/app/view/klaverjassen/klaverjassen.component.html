@@ -1,7 +1,6 @@
-<div class="alert alert-warning">
-  Not yet implemented...
-</div>
+<app-klaverjas-create-match
+  *ngIf="!hasActiveMatch"
+  (createMatch)="onStartGame($event)">
+</app-klaverjas-create-match>
 
-
-<!--<app-klaverjas-create-match *ngIf="!hasActiveMatch" (start)="startGame($event)"></app-klaverjas-create-match>-->
 <!--<app-klaverjas-match [match]="activeMatch"></app-klaverjas-match>-->

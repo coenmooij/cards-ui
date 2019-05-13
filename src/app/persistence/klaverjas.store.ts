@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { KlaverjasMatch } from '../domain/klaverjassen/klaverjas-match.interface';
+import { KlaverjasMatch } from '../domain/klaverjas/klaverjas-match.interface';
 import { Store } from './store';
 
 const ACTIVE_MATCH = 'klaverjas_active_match';

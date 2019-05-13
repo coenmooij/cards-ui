@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
 })
 export class KlaverjassenComponent {
   scores = [];
+  hasActiveMatch = false;
+
+  onStartGame(): void {
+    console.log('game started');
+  }
 }
